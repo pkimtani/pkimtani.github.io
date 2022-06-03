@@ -1,26 +1,53 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import {Grid, Toolbar, Typography, useScrollTrigger} from "@mui/material";
+import {AppBarWrapper, TypographyWrapper} from "./App.style";
+import {Landing} from "./Landing";
+import {AboutMe} from "./AboutMe";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+function ElevationScroll(props: { children: React.ReactElement }) {
+    const {children} = props
+    const trigger = useScrollTrigger({
+        disableHysteresis: true,
+        threshold: 100
+    })
+
+    return React.cloneElement(children, {
+        elevation: trigger ? 4 : 0,
+    })
 }
 
-export default App;
+export const App = () => {
+    return <>
+        <ElevationScroll>
+            <AppBarWrapper>
+                <Toolbar>
+                    <Grid container alignItems="center" justifyContent="space-between">
+                        <Grid item xs={12} sm={8} md={9}>
+                            <TypographyWrapper variant={"h6"}>
+                                Prerit Kimtani
+                            </TypographyWrapper>
+                        </Grid>
+                        <Grid item sx={{display: {xs: 'none', sm: 'block'}}} sm={"auto"} xl={"auto"}>
+                            <Typography component="div">
+                                About
+                            </Typography>
+                        </Grid>
+                        <Grid item sx={{display: {xs: 'none', sm: 'block'}}} sm={"auto"} xl={"auto"}>
+                            <Typography component="div">
+                                Journey
+                            </Typography>
+                        </Grid>
+                        <Grid item sx={{display: {xs: 'none', sm: 'block'}}} sm={"auto"} xl={"auto"}>
+                            <Typography component="div">
+                                Contact
+                            </Typography>
+                        </Grid>
+                    </Grid>
+                </Toolbar>
+            </AppBarWrapper>
+        </ElevationScroll>
+        <Toolbar/>
+        <Landing />
+        <AboutMe />
+    </>
+}
