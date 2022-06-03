@@ -1,6 +1,7 @@
 {
   "name": "portfolio",
   "version": "0.1.0",
+  "homepage": "https://pkimtani.github.io",
   "private": true,
   "dependencies": {
     "@mui/material": "^5.7.0",
@@ -20,6 +21,8 @@
     "web-vitals": "^2.1.4"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "craco start",
     "build": "craco build",
     "test": "craco test",
@@ -46,6 +49,7 @@
   "devDependencies": {
     "@craco/craco": "^7.0.0-alpha.3",
     "@types/styled-components": "^5.1.25",
-    "craco-alias": "^3.0.1"
+    "craco-alias": "^3.0.1",
+    "gh-pages": "^4.0.0"
   }
 }
