@@ -1,4 +1,4 @@
-import {Box, styled, Typography} from "@mui/material";
+import {Box, IconButton, styled, Typography} from "@mui/material";
 
 export const LandingDiv = styled(Box)`
   && {
@@ -10,6 +10,12 @@ export const BoxSpace = styled(Box)`
     && {
       margin: 1rem;
       padding: 1rem;
+    }
+`
+
+export const BoxMargin = styled(Box)`
+    && {
+      margin: 1rem;
     }
 `
 
@@ -49,5 +55,13 @@ export const IOTEnthusiastWrapper = styled(Typography)(({ theme }) => ({
     },
     [theme.breakpoints.up('md')]: {
         fontSize: "2rem",
+    },
+}))
+
+export const GithubIconWrapper = styled(IconButton)(({ theme }) => ({
+    color: "#C4ECEB",
+    [theme.breakpoints.down('sm')]: {
+        fontSize: "1rem",
+        size: 'small'
     },
 }))
