@@ -1,8 +1,8 @@
 import React from 'react';
 import {Grid, Toolbar, Typography, useScrollTrigger} from "@mui/material";
 import {AppBarWrapper, TypographyWrapper} from "./App.style";
-import {Landing} from "./Landing";
-import {AboutMe} from "./AboutMe";
+import {Landing} from "./sections/Landing";
+import {AboutMe} from "./sections/AboutMe";
 
 function ElevationScroll(props: { children: React.ReactElement }) {
     const {children} = props

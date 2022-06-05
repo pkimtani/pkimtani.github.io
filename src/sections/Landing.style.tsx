@@ -1,8 +1,9 @@
 import {Box, IconButton, styled, Typography} from "@mui/material";
+import {PRIMARY_BG_COLOR, PRIMARY_TEXT_COLOR} from "../utils/contatns";
 
 export const LandingDiv = styled(Box)`
   && {
-    background-color: #293b3e;
+    background-color: ${PRIMARY_BG_COLOR};
   }
 `
 
@@ -20,7 +21,7 @@ export const BoxMargin = styled(Box)`
 `
 
 export const FullStackDeveloperWrapper = styled(Typography)(({ theme }) => ({
-    color: "#C4ECEB",
+    color: `${PRIMARY_TEXT_COLOR}`,
     [theme.breakpoints.down('sm')]: {
         textAlign: 'center',
         fontSize: "1.5rem",
@@ -37,7 +38,7 @@ export const FullStackDeveloperWrapper = styled(Typography)(({ theme }) => ({
 }))
 
 export const MobileDeveloperWrapper = styled(Typography)(({ theme }) => ({
-    color: "#C4ECEB",
+    color: `${PRIMARY_TEXT_COLOR}`,
     [theme.breakpoints.down('sm')]: {
         textAlign: 'center',
         fontSize: "1.25rem",
@@ -48,7 +49,7 @@ export const MobileDeveloperWrapper = styled(Typography)(({ theme }) => ({
 }))
 
 export const IOTEnthusiastWrapper = styled(Typography)(({ theme }) => ({
-    color: "#C4ECEB",
+    color: `${PRIMARY_TEXT_COLOR}`,
     [theme.breakpoints.down('sm')]: {
         textAlign: 'center',
         fontSize: "1.25rem",
@@ -59,7 +60,7 @@ export const IOTEnthusiastWrapper = styled(Typography)(({ theme }) => ({
 }))
 
 export const GithubIconWrapper = styled(IconButton)(({ theme }) => ({
-    color: "#C4ECEB",
+    color: `${PRIMARY_TEXT_COLOR}`,
     [theme.breakpoints.down('sm')]: {
         fontSize: "1rem",
         size: 'small'

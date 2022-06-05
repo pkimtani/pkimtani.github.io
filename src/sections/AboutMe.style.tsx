@@ -1,8 +1,9 @@
 import {Box, styled, Typography} from "@mui/material";
+import {SECONDARY_BG_COLOR, SECONDARY_TEXT_COLOR} from "../utils/contatns";
 
 export const AboutMeDiv = styled(Box)`
   && {
-    background-color: #C4ECEB;
+    background-color: ${SECONDARY_BG_COLOR};
   }
 `
 
@@ -13,7 +14,7 @@ export const BoxPadding = styled(Box)`
 `
 
 export const AboutMeTitleWrapper = styled(Typography)(({ theme }) => ({
-    color: "#293B3F",
+    color: `${SECONDARY_TEXT_COLOR}`,
     textAlign: 'center',
     fontSize: '2.5rem',
     fontWeight: 'bold',
@@ -23,7 +24,7 @@ export const AboutMeTitleWrapper = styled(Typography)(({ theme }) => ({
 }))
 
 export const AboutMeContentWrapper = styled(Typography)(({ theme }) => ({
-    color: "#293B3F",
+    color: `${SECONDARY_TEXT_COLOR}`,
     textAlign: 'justify',
     fontSize: '1rem',
     fontWeight: 'bold',
