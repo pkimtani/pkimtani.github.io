@@ -7,12 +7,6 @@ export const AboutMeDiv = styled(Box)`
   }
 `
 
-export const BoxPadding = styled(Box)`
-    && {
-      padding: 1rem;
-    }
-`
-
 export const AboutMeTitleWrapper = styled(Typography)(({ theme }) => ({
     color: `${SECONDARY_TEXT_COLOR}`,
     textAlign: 'center',

@@ -1,4 +1,4 @@
-import {AppBar, Typography, styled} from "@mui/material";
+import {AppBar, Typography, styled, Box} from "@mui/material";
 import {PRIMARY_BG_COLOR, PRIMARY_TEXT_COLOR} from "./utils/contatns";
 
 export const AppBarWrapper = styled(AppBar)`
@@ -13,3 +13,9 @@ export const TypographyWrapper = styled(Typography)(({ theme }) => ({
         textAlign: 'center'
     }
 }))
+
+export const BoxPadding = styled(Box)`
+    && {
+      padding: 1rem;
+    }
+`

@@ -3,6 +3,7 @@ import {Grid, Toolbar, Typography, useScrollTrigger} from "@mui/material";
 import {AppBarWrapper, TypographyWrapper} from "./App.style";
 import {Landing} from "./sections/Landing";
 import {AboutMe} from "./sections/AboutMe";
+import {Journey} from "./sections/Journey";
 
 function ElevationScroll(props: { children: React.ReactElement }) {
     const {children} = props
@@ -49,5 +50,6 @@ export const App = () => {
         <Toolbar/>
         <Landing />
         <AboutMe />
+        <Journey />
     </>
 }

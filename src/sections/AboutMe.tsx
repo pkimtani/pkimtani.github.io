@@ -1,4 +1,5 @@
-import {AboutMeContentWrapper, AboutMeDiv, AboutMeTitleWrapper, BoxPadding} from "./AboutMe.style";
+import {AboutMeContentWrapper, AboutMeDiv, AboutMeTitleWrapper} from "./AboutMe.style";
+import {BoxPadding} from "../App.style";
 
 export const AboutMe = () => {
     return <AboutMeDiv>
