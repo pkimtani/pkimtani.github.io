@@ -3,12 +3,12 @@ import {CardMedia, Container, Grid, Stack, Toolbar} from "@mui/material";
 import {GitHub, LinkedIn, PinDrop} from "@mui/icons-material";
 import {
     BoxMargin,
-    BoxSpace,
     FullStackDeveloperWrapper, GithubIconWrapper,
     IOTEnthusiastWrapper,
     LandingDiv,
     MobileDeveloperWrapper,
 } from "./Landing.style";
+import {BoxSpace} from "../App.style";
 
 export const Landing = () => {
     return <LandingDiv>

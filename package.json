@@ -5,7 +5,8 @@
   "private": true,
   "dependencies": {
     "@mui/icons-material": "^5.8.2",
-    "@mui/material": "^5.7.0",
+    "@mui/lab": "^5.0.0-alpha.90",
+    "@mui/material": "^5.9.0",
     "@mui/styled-engine-sc": "^5.7.0",
     "@testing-library/jest-dom": "^5.16.4",
     "@testing-library/react": "^13.2.0",

@@ -19,3 +19,10 @@ export const BoxPadding = styled(Box)`
       padding: 1rem;
     }
 `
+
+export const BoxSpace = styled(Box)`
+    && {
+      margin: 1rem;
+      padding: 1rem;
+    }
+`

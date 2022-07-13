@@ -4,6 +4,7 @@ import {AppBarWrapper, TypographyWrapper} from "./App.style";
 import {Landing} from "./sections/Landing";
 import {AboutMe} from "./sections/AboutMe";
 import {Journey} from "./sections/Journey";
+import {ExperienceAndSkills} from "./sections/ExperienceAndSkills";
 
 function ElevationScroll(props: { children: React.ReactElement }) {
     const {children} = props
@@ -49,7 +50,6 @@ export const App = () => {
         </ElevationScroll>
         <Toolbar/>
         <Landing />
-        <AboutMe />
-        <Journey />
+        <ExperienceAndSkills />
     </>
 }

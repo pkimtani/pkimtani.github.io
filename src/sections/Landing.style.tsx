@@ -1,18 +1,7 @@
 import {Box, IconButton, styled, Typography} from "@mui/material";
-import {PRIMARY_BG_COLOR, PRIMARY_TEXT_COLOR} from "../utils/contatns";
+import {PRIMARY_TEXT_COLOR} from "../utils/contatns";
 
-export const LandingDiv = styled(Box)`
-  && {
-    background-color: ${PRIMARY_BG_COLOR};
-  }
-`
-
-export const BoxSpace = styled(Box)`
-    && {
-      margin: 1rem;
-      padding: 1rem;
-    }
-`
+export const LandingDiv = styled(Box)``
 
 export const BoxMargin = styled(Box)`
     && {
