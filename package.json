@@ -4,6 +4,7 @@
   "homepage": "https://pkimtani.github.io",
   "private": true,
   "dependencies": {
+    "@fontsource/comic-neue": "^4.5.8",
     "@mui/icons-material": "^5.8.2",
     "@mui/lab": "^5.0.0-alpha.90",
     "@mui/material": "^5.9.0",

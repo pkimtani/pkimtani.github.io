@@ -1,10 +1,16 @@
 import React from 'react';
-import {Grid, Toolbar, Typography, useScrollTrigger} from "@mui/material";
+import {createTheme, Grid, ThemeProvider, Toolbar, useScrollTrigger} from "@mui/material";
 import {AppBarWrapper, TypographyWrapper} from "./App.style";
 import {Landing} from "./sections/Landing";
-import {AboutMe} from "./sections/AboutMe";
-import {Journey} from "./sections/Journey";
 import {ExperienceAndSkills} from "./sections/ExperienceAndSkills";
+
+const theme = createTheme({
+    typography: {
+        allVariants: {
+            fontFamily: `"Comic Neue", cursive`,
+        },
+    },
+})
 
 function ElevationScroll(props: { children: React.ReactElement }) {
     const {children} = props
@@ -19,30 +25,15 @@ function ElevationScroll(props: { children: React.ReactElement }) {
 }
 
 export const App = () => {
-    return <>
+    return <ThemeProvider theme={theme}>
         <ElevationScroll>
             <AppBarWrapper>
                 <Toolbar>
-                    <Grid container alignItems="center" justifyContent="space-between">
-                        <Grid item xs={12} sm={8} md={9}>
-                            <TypographyWrapper variant={"h6"}>
+                    <Grid container alignItems="center" justifyContent="center">
+                        <Grid item xs={12}>
+                            <TypographyWrapper variant={"h5"}>
                                 Prerit Kimtani
                             </TypographyWrapper>
-                        </Grid>
-                        <Grid item sx={{display: {xs: 'none', sm: 'block'}}} sm={"auto"} xl={"auto"}>
-                            <Typography component="div">
-                                About
-                            </Typography>
-                        </Grid>
-                        <Grid item sx={{display: {xs: 'none', sm: 'block'}}} sm={"auto"} xl={"auto"}>
-                            <Typography component="div">
-                                Journey
-                            </Typography>
-                        </Grid>
-                        <Grid item sx={{display: {xs: 'none', sm: 'block'}}} sm={"auto"} xl={"auto"}>
-                            <Typography component="div">
-                                Contact
-                            </Typography>
                         </Grid>
                     </Grid>
                 </Toolbar>
@@ -51,5 +42,5 @@ export const App = () => {
         <Toolbar/>
         <Landing />
         <ExperienceAndSkills />
-    </>
+    </ThemeProvider>
 }

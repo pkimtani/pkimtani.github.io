@@ -7,12 +7,13 @@ export const AppBarWrapper = styled(AppBar)`
   }
 `
 
-export const TypographyWrapper = styled(Typography)(({ theme }) => ({
-    color: `${PRIMARY_TEXT_COLOR}`,
-    [theme.breakpoints.down('sm')]: {
-        textAlign: 'center'
+export const TypographyWrapper = styled(Typography)`
+    && {
+      color: ${PRIMARY_TEXT_COLOR};
+      text-align: center;
+      font-weight: bold;
     }
-}))
+`
 
 export const BoxPadding = styled(Box)`
     && {
