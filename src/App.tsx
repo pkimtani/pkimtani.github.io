@@ -31,7 +31,7 @@ export const App = () => {
                 <Toolbar>
                     <Grid container alignItems="center" justifyContent="center">
                         <Grid item xs={12}>
-                            <TypographyWrapper variant={"h5"}>
+                            <TypographyWrapper variant={"h4"}>
                                 Prerit Kimtani
                             </TypographyWrapper>
                         </Grid>
