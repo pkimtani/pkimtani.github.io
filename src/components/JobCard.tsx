@@ -9,7 +9,7 @@ type JobCardProps = {
 }
 
 export const JobCard = (jobCardProps: JobCardProps) => {
-    return <JobCardWrapper sx={{ minWidth: 275 }} elevation={4}>
+    return <JobCardWrapper sx={{ minWidth: 209 }} elevation={4}>
         <CardContent>
             <Typography variant="h5">
                 { jobCardProps.company }

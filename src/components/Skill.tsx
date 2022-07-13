@@ -1,4 +1,4 @@
-import {Box, Tooltip} from "@mui/material";
+import {Box, Grid} from "@mui/material";
 import {SkillMeter, SkillTitle} from "../sections/ExperienceAndSkills.style";
 import {PRIMARY_TEXT_COLOR} from "../utils/contatns";
 import React from "react";
@@ -11,16 +11,28 @@ type SkillProps = {
 
 export const Skill = (props: SkillProps) => {
     return <SkillWrapper>
-        <Box sx={{minWidth: '5rem'}}>
-            <SkillTitle>{ props.skill }&nbsp;</SkillTitle>
-        </Box>
-        <Box sx={{width: '100%', mr: 1, ml: '2rem'}}>
-            <Tooltip title={props.experienceYears + ' years'} placement="top">
-                <span>
-                    <SkillMeter variant="determinate" value={props.experienceYears * 10}/>
-                    <span style={{color: `${PRIMARY_TEXT_COLOR}`, marginLeft: '22rem', fontSize: '10px'}}>10 years</span>
-                </span>
-            </Tooltip>
-        </Box>
+        <Grid direction={"row"} container>
+            <Grid item xs={3}>
+                <Box>
+                    <SkillTitle>{props.skill}&nbsp;</SkillTitle>
+                </Box>
+            </Grid>
+            <Grid item xs={9}>
+                <Box sx={{width: '100%'}}>
+                    <Grid direction={"row"} container>
+                        <Grid item xs={8} sx={{ paddingTop: '0.5rem' }}>
+                            <SkillMeter variant="determinate" value={props.experienceYears * 10}/>
+                        </Grid>
+                        <Grid item xs={2} sx={{ paddingTop: '1rem', ml: 1 }}>
+                            <span style={{
+                                color: `${PRIMARY_TEXT_COLOR}`,
+                                fontSize: '10px',
+                                marginTop: '1rem',
+                            }}>{props.experienceYears} years</span>
+                        </Grid>
+                    </Grid>
+                </Box>
+            </Grid>
+        </Grid>
     </SkillWrapper>
 }

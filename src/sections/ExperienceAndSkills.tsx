@@ -53,13 +53,19 @@ export const ExperienceAndSkills = () => {
             </Grid>
             <Grid item xs={12} md={1}/>
             <Grid item xs={12} md={5}>
-                <Card raised={true} sx={{backgroundColor: `${PRIMARY_BG_COLOR}`, borderRadius: '20px 0 0 20px'}}>
+                <Card raised={true} sx={{backgroundColor: `${PRIMARY_BG_COLOR}`, borderRadius: {xs: '5px', md: '20px 0 0 20px'}}}>
                     <CardContent>
                         <SkillsTitleWrapper>Skills</SkillsTitleWrapper>
                         <Skill skill={'PHP'} experienceYears={5}/>
                         <Skill skill={'NodeJS'} experienceYears={3}/>
                         <Skill skill={'ReactJS'} experienceYears={1.5}/>
                         <Skill skill={'Angular'} experienceYears={1}/>
+                        <Skill skill={'VueJS'} experienceYears={1}/>
+                        <Skill skill={'MySQL'} experienceYears={5}/>
+                        <Skill skill={'Postgres'} experienceYears={1}/>
+                        <Skill skill={'Docker'} experienceYears={3}/>
+                        <Skill skill={'GCP'} experienceYears={2}/>
+                        <Skill skill={'AWS'} experienceYears={1}/>
                     </CardContent>
                 </Card>
             </Grid>
