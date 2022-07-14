@@ -1,6 +1,6 @@
 import React from 'react';
 import {createTheme, Grid, ThemeProvider, Toolbar, useScrollTrigger} from "@mui/material";
-import {AppBarWrapper, TypographyWrapper} from "./App.style";
+import {AppBarWrapper, FooterWrapper, TypographyWrapper} from "./App.style";
 import {Landing} from "./sections/Landing";
 import {ExperienceAndSkills} from "./sections/ExperienceAndSkills";
 
@@ -42,5 +42,6 @@ export const App = () => {
         <Toolbar/>
         <Landing />
         <ExperienceAndSkills />
+        <FooterWrapper />
     </ThemeProvider>
 }

@@ -27,3 +27,10 @@ export const BoxSpace = styled(Box)`
       padding: 1rem;
     }
 `
+
+export const FooterWrapper = styled(Box)`
+    && {
+      color: ${PRIMARY_TEXT_COLOR};
+      padding: 1rem;
+    }
+`

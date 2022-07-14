@@ -3,7 +3,7 @@ import {CardMedia, Container, Grid, Stack, Toolbar} from "@mui/material";
 import {GitHub, LinkedIn, PinDrop} from "@mui/icons-material";
 import {
     BoxMargin,
-    FullStackDeveloperWrapper, GithubIconWrapper,
+    FullStackDeveloperWrapper, IconButtonWrapper,
     IOTEnthusiastWrapper,
     LandingDiv,
     MobileDeveloperWrapper,
@@ -38,21 +38,25 @@ export const Landing = () => {
             <BoxMargin  sx={{ display: { xs: 'block', sm: 'none' } }}/>
             <Grid container sx={{ justifyContent: { xs: 'none', sm: 'space-evenly' } }}>
                 <Grid item xs={2} sm={2}>
-                    <GithubIconWrapper aria-label="github">
-                        <GitHub/>&nbsp;pkimtani
-                    </GithubIconWrapper>
+                    <a href='https://github.com/pkimtani' target='_blank' rel="noreferrer">
+                        <IconButtonWrapper aria-label="github">
+                            <GitHub/>&nbsp;pkimtani
+                        </IconButtonWrapper>
+                    </a>
                 </Grid>
                 <Grid item xs={2} sx={{ display: { xs: 'block', sm: 'none' } }}/>
                 <Grid item xs={2} sm={2}>
-                    <GithubIconWrapper aria-label="github">
-                        <LinkedIn/>&nbsp;pkimtani
-                    </GithubIconWrapper>
+                    <a href='https://www.linkedin.com/in/pkimtani' target='_blank' rel="noreferrer">
+                        <IconButtonWrapper aria-label="github">
+                            <LinkedIn/>&nbsp;pkimtani
+                        </IconButtonWrapper>
+                    </a>
                 </Grid>
                 <Grid item xs={2} sx={{ display: { xs: 'block', sm: 'none' } }}/>
                 <Grid item xs={2} sm={2}>
-                    <GithubIconWrapper aria-label="github">
+                    <IconButtonWrapper aria-label="github">
                         <PinDrop/>&nbsp;Helsinki
-                    </GithubIconWrapper>
+                    </IconButtonWrapper>
                 </Grid>
             </Grid>
             <Toolbar/>

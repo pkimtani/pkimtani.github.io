@@ -48,7 +48,7 @@ export const IOTEnthusiastWrapper = styled(Typography)(({ theme }) => ({
     },
 }))
 
-export const GithubIconWrapper = styled(IconButton)(({ theme }) => ({
+export const IconButtonWrapper = styled(IconButton)(({ theme }) => ({
     color: `${PRIMARY_TEXT_COLOR}`,
     [theme.breakpoints.down('sm')]: {
         fontSize: "1rem",
