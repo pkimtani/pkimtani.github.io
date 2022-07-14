@@ -38,7 +38,7 @@ export const Landing = () => {
             <BoxMargin  sx={{ display: { xs: 'block', sm: 'none' } }}/>
             <Grid container sx={{ justifyContent: { xs: 'none', sm: 'space-evenly' } }}>
                 <Grid item xs={2} sm={2}>
-                    <a href='https://github.com/pkimtani' target='_blank' rel="noreferrer">
+                    <a href='https://github.com/pkimtani' target='_blank' rel="noreferrer" style={{ textDecoration: 'none' }}>
                         <IconButtonWrapper aria-label="github">
                             <GitHub/>&nbsp;pkimtani
                         </IconButtonWrapper>
@@ -46,7 +46,7 @@ export const Landing = () => {
                 </Grid>
                 <Grid item xs={2} sx={{ display: { xs: 'block', sm: 'none' } }}/>
                 <Grid item xs={2} sm={2}>
-                    <a href='https://www.linkedin.com/in/pkimtani' target='_blank' rel="noreferrer">
+                    <a href='https://www.linkedin.com/in/pkimtani' target='_blank' rel="noreferrer" style={{ textDecoration: 'none' }}>
                         <IconButtonWrapper aria-label="github">
                             <LinkedIn/>&nbsp;pkimtani
                         </IconButtonWrapper>
