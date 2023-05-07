@@ -21,6 +21,13 @@ export const ExperienceAndSkills = () => {
                 <ExperienceWrapper>
                     <Timeline>
                         <ExperienceTimelineItem
+                            start={'October 2022'}
+                            end={'present'}
+                            company={'Wunderdog Oy'}
+                            location={'Helsinki, Finland'}
+                            role={'Sr. Technology Consultant'}
+                        />
+                        <ExperienceTimelineItem
                             start={'April 2021'}
                             end={'August 2022'}
                             company={'Swappie Oy'}
@@ -58,7 +65,7 @@ export const ExperienceAndSkills = () => {
                         <SkillsTitleWrapper>Skills</SkillsTitleWrapper>
                         <Skill skill={'PHP'} experienceYears={5}/>
                         <Skill skill={'NodeJS'} experienceYears={3}/>
-                        <Skill skill={'ReactJS'} experienceYears={1.5}/>
+                        <Skill skill={'ReactJS'} experienceYears={2}/>
                         <Skill skill={'Angular'} experienceYears={1}/>
                         <Skill skill={'VueJS'} experienceYears={1}/>
                         <Skill skill={'MySQL'} experienceYears={5}/>
